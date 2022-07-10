@@ -4,7 +4,8 @@ module.exports = {
   "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors:{
-      primary:'#164C25'
+      primary:'#164C25',
+      MyWhite: '#ffffff'
     },
     extend: {},
     fontFamily: {

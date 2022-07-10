@@ -22,7 +22,7 @@ const Card = ({product}) => {
       {product?.map((shoes) => (  
         <div className="flex items-end  px-3 pb-5 mx-4 ">
           <div className=" w-80">
-      <Image   src={shoes.img} objectFit='contain' width={400} height={400}/>
+      <Image   src={shoes.img}  objectFit='contain' width={400} height={400}/>
       <h3 className="text-2xl ">JORDAN</h3>
     <h4 className="text-xl">Air Jordan 1 Retro High “University Blue” sneakers</h4>
     <div className="flex justify-between">

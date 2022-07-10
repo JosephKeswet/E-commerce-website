@@ -7,9 +7,12 @@ import { ChevronRightIcon } from '@heroicons/react/solid'
 import Nav from '../components/Nav';
 import MiddleSection from '../components/MiddleSection';
 import Categories from '../components/Categories';
+import Bottom from '../components/Bottom';
 
 
 export default function Home() {
+  
+
   return (
     <div>
       <Nav/>
@@ -25,9 +28,11 @@ export default function Home() {
         </div>
       </div>
       
+      
       <Card product={CardData}/>
       <MiddleSection/>
       <Categories/>
+      <Bottom/>
 
     </div>
   )
