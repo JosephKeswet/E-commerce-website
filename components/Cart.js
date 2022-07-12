@@ -28,7 +28,9 @@ const Cart = ({product}) => {
   </div>
 ))
 }
-<div className="flex items-center justify-center w-[253px] h-[70px] border-4 border-primary rounded-[40px] bg-MyWhite ml-[635px] mr-[624px] mt-12 mb-12 ">
+<div className="flex items-center justify-center w-[253px] h-[70px] 
+border-4 border-primary rounded-[40px]
+ bg-MyWhite ml-[635px] mr-[624px] mt-12 mb-12 cursor-pointer hover:shadow-lg transition-all duration-75 hover:animate-bounce ">
   <h1 className="text-[20px] font-Ko font-normal text-primary">GO TO CHECKOUT</h1>
 </div>
   </div>;
