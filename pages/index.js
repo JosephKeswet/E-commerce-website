@@ -14,7 +14,7 @@ export default function Home() {
   
 
   return (
-    <div>
+    <div className='bg-MyWhite'>
       <Nav/>
       <Search/>
       <div className='flex justify-between my-36 mx-28'>
@@ -28,8 +28,9 @@ export default function Home() {
         </div>
       </div>
       
-      
+      <div className='mx-24'>
       <Card product={CardData}/>
+      </div>
       <MiddleSection/>
       <Categories/>
       <Bottom/>

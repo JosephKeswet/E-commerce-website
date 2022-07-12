@@ -27,19 +27,27 @@ const Categories = ({tracks}) => {
   console.log(tracks)
   return <div className="flex justify-between mx-28 pt-60 font-Ko text-primary relative">
     <div>
-        <h1 className="text-6xl">CATEGORIES</h1>
-        <ul>
-            <li className="w-[275px]">BRAND  <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
-            <li className="w-[275px]">COLOR <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
-            <li className="w-[275px]">PRICE <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
-            <li className="w-[275px]">SIZE <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
-        </ul>
+
+      <h1 className="text-6xl">CATEGORIES</h1>
+
+      <ul>
+          <li className="w-[275px] cursor-pointer">BRAND  <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
+          <li className="w-[275px] cursor-pointer">COLOR <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
+          <li className="w-[275px] cursor-pointer">PRICE <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
+          <li className="w-[275px] cursor-pointer">SIZE <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
+      </ul>
+
     </div>
-    <div className="flex text-right items-center leading-6 cursor-pointer absolute left-[1319px]">
-        <p className='text-xl'>VIEW ALL</p>
-        <ChevronRightIcon className='w-8 '/>
+
+    <div className=" flex-col items-center leading-6 cursor-pointer overflow-hidden">
+
+        <div className="flex justify-end items-center">
+          <p className='text-xl'>VIEW ALL</p>
+          <ChevronRightIcon className='w-8 '/>
+        </div>
+
+        <Card product={CardData}/>
     </div>
-    <Card product={CardData}/>
 
   </div>;
 };
