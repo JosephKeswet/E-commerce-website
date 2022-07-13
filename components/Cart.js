@@ -19,9 +19,9 @@ const Cart = ({product}) => {
 <div className="pl-[97px]">
 <h1 className="text-[50px] font-serif font-normal text-primary leading-[57px]">$ {shoes.price}</h1>
 <div className="flex justify-center items-center w-[126px] h-[45px] border-4 border-primary rounded-[40px] mt-[23px] mb-[21px]">
-    <button className="text-[36px] leading-[46.4px] font-Ko font-normal text-primary pr-6">-</button>
-        <h1 className="text-[24px] leading-[30.96px]">1</h1>
-    <button className="text-[36px] leading-[46.4px] font-Ko font-normal text-primary pl-6">+</button>
+    <button className="text-[36px] leading-[46.4px] font-Ko font-normal text-primary pr-6 cursor-pointer">-</button>
+        <h1 className="text-[24px] leading-[30.96px] font-Ko font-normal text-primary">2</h1>
+    <button className="text-[36px] leading-[46.4px] font-Ko font-normal text-primary pl-6 cursor-pointer">+</button>
 </div>
 <h3 className="text-[15px] font-Ko font-normal leading-[19.35px] text-primary pl-3">REMOVE FROM CART</h3>
 </div>

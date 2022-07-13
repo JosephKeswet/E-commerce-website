@@ -5,7 +5,10 @@ import Link from 'next/link'
 const Nav = () => {
   return <div className="mx-24 text-primary font-Ko">
       <div className='flex justify-between my-3 items-center'>
-        <h1 className='text-4xl font-normal cursor-pointer  bg-MyWhite animate-bounce'>Shoes&Shoes</h1>
+        <h1 className='text-4xl font-normal cursor-pointer  bg-MyWhite animate-bounce'> 
+        <Link href='/'>
+            Shoes&Shoes
+            </Link></h1>
         <ul className='flex text-xl cursor-pointer '>
           <li className='px-5 '>
             <Link href='/'>

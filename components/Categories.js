@@ -23,20 +23,26 @@ import Card from "./Card";
 //   }
 // }
 
-const Categories = ({tracks}) => {
-  console.log(tracks)
-  return <div className="flex justify-between mx-28 pt-60 font-Ko text-primary relative">
+const Categories = () => {
+  
+  return <div className="flex justify-between mx-28  font-Ko text-primary relative">
     <div>
 
       <h1 className="text-6xl">CATEGORIES</h1>
-
-      <ul>
-          <li className="w-[275px] cursor-pointer">BRAND  <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
-          <li className="w-[275px] cursor-pointer">COLOR <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
-          <li className="w-[275px] cursor-pointer">PRICE <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
-          <li className="w-[275px] cursor-pointer">SIZE <ChevronDownIcon className='w-5 inline-block pb-1'/></li>
-      </ul>
-
+      <div className="flex">
+        <ul>
+            <li className="w-[275px] cursor-pointer ">BRAND</li>
+            <li className="w-[275px] cursor-pointer">COLOR </li>
+            <li className="w-[275px] cursor-pointer">PRICE </li>
+            <li className="w-[275px] cursor-pointer">SIZE </li>
+        </ul>
+        <div>
+          <ChevronDownIcon className='w-5  pb-1 cursor-pointer'/>
+          <ChevronDownIcon className='w-5  pb-1 cursor-pointer'/>
+          <ChevronDownIcon className='w-5  pb-1 cursor-pointer'/>
+          <ChevronDownIcon className='w-5  pb-1 cursor-pointer'/>
+        </div>
+      </div>
     </div>
 
     <div className=" flex-col items-center leading-6 cursor-pointer overflow-hidden">

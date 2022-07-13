@@ -15,8 +15,9 @@ const Bottom = () => {
             <li>Outer: Fabric 100%</li>
             <li>Sole: Rubber 100%</li>
         </ul>
-          <button className="mt-16 text-xl cursor-pointer font-normal  py-4 rounded-full 
-          border-solid border-2 border-black w-48 mb-44 leading-6 "
+          <button className="mt-16 text-xl hover:cursor-pointer font-normal
+            py-4 rounded-full 
+          border-solid border-2 border-MyWhite w-48 mb-44 leading-6 "
           >
           VIEW
           </button>
