@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .Arrowdown{
+        @apply w-5  pb-1 cursor-pointer
+    }
+    .Category{
+      @apply  w-[275px] cursor-pointer
+    }
+}

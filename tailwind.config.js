@@ -7,7 +7,8 @@ module.exports = {
       primary:'#164C25',
       MyWhite: '#ffffff',
       black: '#000000',
-      gray: "#a7a7a8"
+      gray: "#a7a7a8",
+      ash: "#C4C4C4"
     },
     extend: {},
     fontFamily: {

@@ -3,6 +3,7 @@ import { ChevronRightIcon } from '@heroicons/react/solid'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import CardData from "../Data/CardData";
 import Card from "./Card";
+import Link from "next/link";
 
 // export async function getStaticProps(){
   // const CLIENT_ID = "b7947c405d994b009218fe4918a35d86";
@@ -31,27 +32,27 @@ const Categories = () => {
       <h1 className="text-6xl">CATEGORIES</h1>
       <div className="flex">
         <ul>
-            <li className="w-[275px] cursor-pointer ">BRAND</li>
-            <li className="w-[275px] cursor-pointer">COLOR </li>
-            <li className="w-[275px] cursor-pointer">PRICE </li>
-            <li className="w-[275px] cursor-pointer">SIZE </li>
+            <li className="Category">BRAND</li>
+            <li className="Category">COLOR </li>
+            <li className="Category">PRICE </li>
+            <li className="Category">SIZE </li>
         </ul>
         <div>
-          <ChevronDownIcon className='w-5  pb-1 cursor-pointer'/>
-          <ChevronDownIcon className='w-5  pb-1 cursor-pointer'/>
-          <ChevronDownIcon className='w-5  pb-1 cursor-pointer'/>
-          <ChevronDownIcon className='w-5  pb-1 cursor-pointer'/>
+          <ChevronDownIcon className='Arrowdown'/>
+          <ChevronDownIcon className='Arrowdown'/>
+          <ChevronDownIcon className='Arrowdown'/>
+          <ChevronDownIcon className='Arrowdown'/>
         </div>
       </div>
     </div>
 
     <div className=" flex-col items-center leading-6 cursor-pointer overflow-hidden">
-
+      <Link href="/CategoriesPage">
         <div className="flex justify-end items-center">
           <p className='text-xl'>VIEW ALL</p>
           <ChevronRightIcon className='w-8 '/>
         </div>
-
+      </Link>
         <Card product={CardData}/>
     </div>
 
