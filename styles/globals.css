@@ -10,4 +10,9 @@
     .Category{
       @apply  w-[275px] cursor-pointer
     }
+    .Inputs{
+      @apply w-[644px] h-[60px] border-4 border-solid border-primary rounded-[40px] bg-MyWhite my-6 
+      placeholder:text-xl placeholder:font-Ko placeholder:text-primary placeholder:font-normal placeholder:leading-[26px] 
+      placeholder:pt-[17px] placeholder:pb-[17px] placeholder:pl-[23px]
+    }
 }
