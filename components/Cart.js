@@ -1,10 +1,26 @@
 import React from "react";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, descreaseQuantity, removeFromCart } from "../slices/cartSlice";
 
 const Cart = ({product}) => {
+
+  
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch()
+  const handleAddToCart = (shoes) =>{
+    dispatch(addToCart(shoes))
+  }
+  const handleRemove = (shoes) =>{
+    dispatch(removeFromCart(shoes))
+  }
+  const handleDecreaseQuantity = (shoes) =>{
+    dispatch(descreaseQuantity(shoes))
+  }
+
   const CartItems = () => (
     <div>
-          {product.map(shoes =>(
+          {cart.cartItems?.map(shoes =>(
       <div className="flex border-4 border-primary rounded-[300px] items-center justify-center mb-6 mt-7 mx-32">
         <div className="w-52">
       <Image   src={shoes.img}  objectFit='contain' />
@@ -17,13 +33,13 @@ const Cart = ({product}) => {
     <h1 className="pt-7 text-2xl leading-6 font-Ko font-normal text-primary">ARRIVAL: AUGUST {shoes.date} </h1>
     </div>
     <div className="pl-[97px]">
-    <h1 className="text-[50px] font-serif font-normal text-primary leading-[57px]">$ {shoes.price}</h1>
+    <h1 className="text-[50px] font-serif font-normal text-primary leading-[57px]">$ {shoes.price * shoes.cartQuantity}</h1>
     <div className="flex justify-center items-center w-[126px] h-[45px] border-4 border-primary rounded-[40px] mt-[23px] mb-[21px]">
-        <button className="text-[36px] leading-[46.4px] font-Ko font-normal text-primary pr-6 cursor-pointer">-</button>
-            <h1 className="text-[24px] leading-[30.96px] font-Ko font-normal text-primary">2</h1>
-        <button className="text-[36px] leading-[46.4px] font-Ko font-normal text-primary pl-6 cursor-pointer">+</button>
+        <button className="text-[36px] leading-[46.4px] font-Ko font-normal text-primary pr-6 cursor-pointer" onClick={() => handleDecreaseQuantity(shoes)} >-</button>
+            <h1 className="text-[24px] leading-[30.96px] font-Ko font-normal text-primary">{shoes.cartQuantity }</h1>
+        <button className="text-[36px] leading-[46.4px] font-Ko font-normal text-primary pl-6 cursor-pointer" onClick={() => handleAddToCart(shoes)}>+</button>
     </div>
-    <h3 className="text-[15px] font-Ko font-normal leading-[19.35px] text-primary pl-3 cursor-pointer">REMOVE FROM CART</h3>
+    <h3 className="text-[15px] font-Ko font-normal leading-[19.35px] text-primary pl-3 cursor-pointer" onClick={() => handleRemove(shoes)}>REMOVE FROM CART</h3>
     </div>
       </div>
     ))

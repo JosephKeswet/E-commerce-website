@@ -9,13 +9,13 @@ const Nav = () => {
         <Link href='/'>Shoes&Shoes</Link>
         </h1>
         <ul className=' hidden md:flex text-xl cursor-pointer '>
-          <li className='px-5 '>
+          <li className='Nav'>
             <Link href='/'>Home</Link>
           </li>
-          <li className='px-5'>
+          <li className='Nav'>
           <Link href='/'>Account</Link>
           </li>
-          <li className='px-5'>
+          <li className='Nav'>
           <Link href='/'>Help</Link>
           </li>
         </ul>

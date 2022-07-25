@@ -32,10 +32,10 @@ const Categories = () => {
       <h1 className="text-6xl">CATEGORIES</h1>
       <div className="flex">
         <ul>
-            <li className="Category">BRAND</li>
-            <li className="Category">COLOR </li>
-            <li className="Category">PRICE </li>
-            <li className="Category">SIZE </li>
+            <li className="Underline Category">BRAND</li>
+            <li className="Underline Category">COLOR </li>
+            <li className="Underline Category">PRICE </li>
+            <li className="Underline Category">SIZE </li>
         </ul>
         <div>
           <ChevronDownIcon className='Arrowdown'/>
@@ -48,7 +48,7 @@ const Categories = () => {
 
     <div className=" flex-col items-center leading-6 cursor-pointer overflow-hidden">
       <Link href="/CategoriesPage">
-        <div className="flex justify-end items-center">
+        <div className="Nav flex justify-end items-center">
           <p className='text-xl'>VIEW ALL</p>
           <ChevronRightIcon className='w-8 '/>
         </div>

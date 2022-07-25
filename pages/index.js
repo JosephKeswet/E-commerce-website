@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className='text-6xl pb-4'>Top Deals</h1>
         <p className='text-2xl'>The hottest shoes from our store right now.</p>
       </div>
-      <div className='cursor-pointer font-Ko text-primary'>
+      <div className='Nav cursor-pointer font-Ko text-primary'>
         <span className='text-xl'>VIEW ALL </span>
         <ChevronRightIcon className='w-5 inline-block pb-1'/>
       </div>
