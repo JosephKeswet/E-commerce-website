@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, descreaseQuantity, removeFromCart } from "../slices/cartSlice";
+import Link from "next/link";
 
 const Cart = ({product}) => {
 
@@ -52,7 +53,12 @@ const Cart = ({product}) => {
                       border-4 border-primary rounded-[40px]
                     bg-MyWhite ml-[635px] mr-[624px] mt-12 mb-12 cursor-pointer 
                       hover:shadow-lg transition-all duration-75 hover:border-white   ">
-            <h1 className="text-[20px] font-Ko font-normal text-primary  ">GO TO CHECKOUT</h1>
+            <h1 className="text-[20px] font-Ko font-normal text-primary  ">
+              <Link href='/CheckOut'>
+                  GO TO CHECKOUT
+              </Link>
+ 
+              </h1>
       </div>
   </div>;
 };

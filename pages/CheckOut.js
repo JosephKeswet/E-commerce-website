@@ -1,15 +1,27 @@
 import { ChevronLeftIcon } from "@heroicons/react/solid";
-import React from "react";
+import Link from "next/link";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Inputs from "../components/Inputs";
 import Nav from "../components/Nav";
 import Search from "../components/Search";
+import { getTotals } from "../slices/cartSlice";
 
 const CheckOut = () => {
+    const cart = useSelector((state) => state.cart)
+    const dispatch = useDispatch()
+  
+    useEffect(() =>{
+      dispatch(getTotals())
+    },[cart])
+    
   return <div>
     
     <Nav/>
     <div>
-    <ChevronLeftIcon className="w-[45px] h-[45px] absolute left-[90px] bg-gray  bg-opacity-10 rounded-full cursor-pointer "/>
+        <Link href='/MyCart'>
+            <ChevronLeftIcon className="w-[45px] h-[45px] absolute left-[90px] bg-gray  bg-opacity-10 rounded-full cursor-pointer "/>
+        </Link>
     <Search/>
     </div>
 
@@ -51,7 +63,7 @@ const CheckOut = () => {
         <h1 className="text-2xl font-Ko font-normal text-primary underline">SUMMARY</h1>
         <div className="flex mt-[31px]">
         <h3 className="pr-[161px] font-Ko font-normal text-xl leading-[26px] text-primary">TOTAL</h3>
-        <h3 className="text-xl font-Ko font-normal text-primary leading-[26px]">USD $ 1,675</h3>
+        <h3 className="text-xl font-Ko font-normal text-primary leading-[26px]">USD $ {cart.cartTotalAmount}</h3>
         </div>
         <button className=" W-[280px] h-16 font-Ko border-solid rounded-[40px] text-primary
             border-primary border-4 px-[62px]  text-xl mt-[37px]   hover:shadow-sm hover:border-white hover:text-MyWhite hover:bg-primary ">
