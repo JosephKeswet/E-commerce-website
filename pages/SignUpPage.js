@@ -8,7 +8,10 @@ const SignUpPage = () => {
   return <div>
     <div>
     <Nav/>
+    <Link href='/'>
     <ChevronLeftIcon className="w-[45px] h-[45px] absolute left-[90px] bg-gray  bg-opacity-10 rounded-full cursor-pointer "/>
+    </Link>
+
     </div>
     <main className="flex flex-col">
         <h1 className="text-center font-Ko text-[60px] font-normal leading-[77.4px] mb-12 text-primary ">CREATE ACCOUNT</h1>

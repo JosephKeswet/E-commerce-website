@@ -27,11 +27,11 @@ const CartItem = () => {
       <h1 className="text-[30px] font-normal font-Ko leading-[39px] text-primary">JORDAN</h1>
       <h3 className="text-xl font-Ko font-normal text-primary mt-6">AIR JORDAN 1 MID SNEAKERS</h3>
       <div className="flex items-center mt-6">
-      <Image src={star} objectFit="contain" />
-      <Image src={star} objectFit="contain" />
-      <Image src={star} objectFit="contain" />
-      <Image src={star} objectFit="contain" />
-      <Image src={star} objectFit="contain" />
+      <Image src={star} objectFit="contain" alt="This a shoe image"/>
+      <Image src={star} objectFit="contain" alt="This a shoe image"/>
+      <Image src={star} objectFit="contain" alt="This a shoe image"/>
+      <Image src={star} objectFit="contain" alt="This a shoe image"/>
+      <Image src={star} objectFit="contain" alt="This a shoe image"/>
       <p className="text-xl font-normal ml-6 leading-[23px] font-serif text-primary">2,300 reviews</p>
       </div>
       <h1 className="mt-6 text-[50px] font-serif font-normal leading-[57px] text-primary">$ 182</h1>
@@ -82,7 +82,7 @@ const CartItem = () => {
     {reviewNames.map((name)=>(
       <div className="w-[1312px] h-[250px] border rounded-[300px] bg-MyWhite relative mb-6 ">
       <div className="w-[275px] h-[224px] rounded-[267.933px] absolute left-[14px] top-[13px]">
-        <Image src={Reviewgirl} objectFit="contain"/>
+        <Image src={Reviewgirl} objectFit="contain" alt="This is a woman"/>
       </div>
   <div className="absolute left-[313px] top-9">
     <h1 className="text-2xl text-primary leading-[30.9px] font-Ko font-normal ">{name.name}</h1>
@@ -92,11 +92,11 @@ const CartItem = () => {
   </div>
   <div className="absolute left-[1035px] top-[186px] ">
     <div className="flex items-center">
-      <Image src={star} objectFit="contain" />
-      <Image src={star} objectFit="contain" />
-      <Image src={star} objectFit="contain" />
-      <Image src={star} objectFit="contain" />
-      <Image src={star} objectFit="contain" />
+      <Image src={star} objectFit="contain" alt="This is star rating"/>
+      <Image src={star} objectFit="contain" alt="This is star rating"/>
+      <Image src={star} objectFit="contain" alt="This is star rating"/>
+      <Image src={star} objectFit="contain" alt="This is star rating"/>
+      <Image src={star} objectFit="contain" alt="This is star rating"/>
       </div>
   </div>
   </div>
@@ -117,20 +117,20 @@ const CartItem = () => {
         {/* Shoe section */}
         <div className="ml-[100px] mt-[79.5px]">
           <div className="w-[644px] h-[521px]">
-          <Image src={YellowShoe} objectFit="contain"/>
+          <Image src={YellowShoe} objectFit="contain alt='Shoe Image' "/>
           </div>
           <div className="flex mt-9">
             <div className="w-[136px]">
-              <Image src={shoe1} objectFit="contain"/>
+              <Image src={shoe1} objectFit="contain" alt='Shoe Image' />
             </div>
             <div className="w-[136px]">
-              <Image src={shoe2} objectFit="contain"/>
+              <Image src={shoe2} objectFit="contain" alt='Shoe Image' />
             </div>
             <div className="w-[136px]">
-              <Image src={shoe3} objectFit="contain"/>
+              <Image src={shoe3} objectFit="contain" alt='Shoe Image' />
             </div>
             <div className="w-[136px]">
-              <Image src={shoe4} objectFit="contain"/>
+              <Image src={shoe4} objectFit="contain" alt='Shoe Image' />
             </div>
           </div>
 
