@@ -22,9 +22,9 @@ const Cart = ({product}) => {
   const CartItems = () => (
     <div>
           {cart.cartItems?.map(shoes =>(
-      <div className="flex border-4 border-primary rounded-[300px] items-center justify-center mb-6 mt-7 mx-32">
+      <div className="flex border-4 border-primary rounded-[300px] items-center justify-center mb-6 mt-7 mx-32" key={shoes.id}>
         <div className="w-52">
-      <Image   src={shoes.img}  objectFit='contain' />
+      <Image   src={shoes.img}  objectFit='contain' alt="" />
       </div>
       
     <div className="pl-7 pt-[42px]">

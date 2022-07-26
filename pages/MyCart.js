@@ -14,7 +14,7 @@ const MyCart = () => {
 
   useEffect(() =>{
     dispatch(getTotals())
-  },[cart])
+  },[cart,dispatch])
 
       const CheckOut = () => (
         <main className=" flex mt-12 justify-center">

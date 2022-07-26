@@ -17,7 +17,7 @@ const GridCards = () => {
                 {CardData?.map((shoes) => (  
                 <div className="  px-3 pb-5 mx-4 " key={shoes.id}>
                     <div className=" w-80">
-                        <Image   src={shoes.img}  objectFit='contain' width={400} height={400}/>
+                        <Image   src={shoes.img}  objectFit='contain' width={400} height={400} alt=''/>
                         <h3 className="text-2xl ">{shoes.shoeBrand}</h3>
                         <h4 className="text-xl">{shoes.shoeName}</h4>
                         <div className="flex justify-between">

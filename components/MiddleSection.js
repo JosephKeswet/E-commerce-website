@@ -13,6 +13,7 @@ const MiddleSection = () => {
       <Image
       src={skate}
       layout='fill'
+      alt=""
       />
     </div>
     

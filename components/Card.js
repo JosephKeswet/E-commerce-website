@@ -42,7 +42,7 @@ const Card = ({product}) => {
         <div className="flex items-end px-3 pb-5 mx-4 cursor-pointer " key={shoes.id}>
             <SwiperSlide key={shoes.id} className="swiper" >
           <div className=" w-80">
-            <Image   src={shoes.img}   objectFit='contain' width={400} height={400}/>
+            <Image   src={shoes.img}   objectFit='contain' width={400} height={400} alt=''/>
             <h3 className="text-2xl animate-bounce" >{shoes.shoeBrand}</h3>
             <h4 className="text-xl " >{shoes.shoeName}</h4>
             <div className="flex justify-between">

@@ -5,7 +5,7 @@ import Skeezer from '../images/Skeezers.png'
 const Bottom = () => {
   return <div className="flex text-MyWhite static items-center justify-end  ">
       <div className="absolute left-0">
-        <Image   src={Skeezer} objectFit='contain' />
+        <Image   src={Skeezer} objectFit='contain' alt="" />
       </div>
       <div className="bg-primary pl-14 pr-48 pt-48 w-[52%]   ">
         <h3 className="text-2xl">Paul Smith</h3>

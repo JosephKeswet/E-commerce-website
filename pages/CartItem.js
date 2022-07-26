@@ -80,7 +80,7 @@ const CartItem = () => {
       <section className="pl-[100px] pb-9 bg-primary">
       <h1 className="text-[60px] text-MyWhite leading-[77px] font-Ko font-normal pt-[95px] pb-[36px]">REVIEWS</h1>
     {reviewNames.map((name)=>(
-      <div className="w-[1312px] h-[250px] border rounded-[300px] bg-MyWhite relative mb-6 ">
+      <div className="w-[1312px] h-[250px] border rounded-[300px] bg-MyWhite relative mb-6 " key={name.name}>
       <div className="w-[275px] h-[224px] rounded-[267.933px] absolute left-[14px] top-[13px]">
         <Image src={Reviewgirl} objectFit="contain" alt="This is a woman"/>
       </div>
@@ -117,7 +117,7 @@ const CartItem = () => {
         {/* Shoe section */}
         <div className="ml-[100px] mt-[79.5px]">
           <div className="w-[644px] h-[521px]">
-          <Image src={YellowShoe} objectFit="contain alt='Shoe Image' "/>
+          <Image src={YellowShoe} objectFit="contain" alt=""/>
           </div>
           <div className="flex mt-9">
             <div className="w-[136px]">

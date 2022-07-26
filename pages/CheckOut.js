@@ -13,7 +13,7 @@ const CheckOut = () => {
   
     useEffect(() =>{
       dispatch(getTotals())
-    },[cart])
+    },[cart,dispatch])
     
   return <div>
     
